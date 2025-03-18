@@ -88,7 +88,7 @@ def main():
         # Send message to Groq
         client = st.session_state.model
         completion = client.chat.completions.create(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.3-70b-specdec",
             messages=model_messages,
             temperature=1,
             max_tokens=8000,
